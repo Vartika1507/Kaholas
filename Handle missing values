@@ -1,0 +1,4 @@
+# Fill missing values with the mean for 'time_spent' in user_interactions_df
+user_interactions_df['time_spent'].fillna(user_interactions_df['time_spent'].mean(), inplace=True)
+
+# You can do the same for other columns as needed
