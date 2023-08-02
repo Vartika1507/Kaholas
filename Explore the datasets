@@ -1,0 +1,23 @@
+# Display basic info about each dataset
+print("User Interactions Dataset:")
+print(user_interactions_df.info())
+print("\nPurchase Data Dataset:")
+print(purchase_data_df.info())
+print("\nWebsite Performance Dataset:")
+print(website_performance_df.info())
+
+# Summary statistics for numerical columns
+print("\nSummary Statistics for User Interactions:")
+print(user_interactions_df.describe())
+print("\nSummary Statistics for Purchase Data:")
+print(purchase_data_df.describe())
+print("\nSummary Statistics for Website Performance:")
+print(website_performance_df.describe())
+
+# Check for missing values
+print("\nMissing Values in User Interactions Dataset:")
+print(user_interactions_df.isnull().sum())
+print("\nMissing Values in Purchase Data Dataset:")
+print(purchase_data_df.isnull().sum())
+print("\nMissing Values in Website Performance Dataset:")
+print(website_performance_df.isnull().sum())
