@@ -1,0 +1,3 @@
+user_interactions_df.drop_duplicates(inplace=True)
+purchase_data_df.drop_duplicates(inplace=True)
+website_performance_df.drop_duplicates(inplace=True)
