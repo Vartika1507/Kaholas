@@ -1,0 +1,5 @@
+# Remove outliers from 'transaction_amount' in purchase_data_df using z-score method
+from scipy import stats
+
+z_scores = stats.zscore(purchase_data_df['transaction_amount'])
+purchase_data_df = purchase_data_df[(z_scores < 3)]
