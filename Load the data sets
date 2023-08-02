@@ -1,0 +1,6 @@
+import pandas as pd
+
+# Load the datasets
+user_interactions_df = pd.read_csv('user_interactions.csv')
+purchase_data_df = pd.read_csv('purchase_data.csv')
+website_performance_df = pd.read_csv('website_performance.csv')
